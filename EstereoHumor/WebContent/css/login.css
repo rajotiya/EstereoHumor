@@ -1,0 +1,319 @@
+body {
+    background-image: url("/EstereoHumor/images/pattern2.png");
+	font-family: serif;
+	font-size: 12px;
+}
+.header {
+	width: 100%;
+	height: 80px;
+	background-color: rgba(34, 38, 26, 0.8);
+    background: rgba(34, 38, 26, 0.8);
+    color: rgba(34, 38, 26, 0.8);
+}
+#cssmenu_red {
+	width: 410px;
+	height: 50px;
+	float: right;
+}
+
+#cssmenu_red ul {
+	width: 400px;
+	height: 45px;
+}
+
+#cssmenu_red ul li {
+	width: 80px;
+	height: 35px;
+	float: left;
+	list-style: none;
+	padding-left: 30px;
+	padding-right: -10px;
+	padding-top: 7px;
+	border-right:1px solid #6E6E6E; 
+}
+
+#cssmenu_red ul li a {
+	width: 80px;
+	height: 20px;
+	float: left;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 18px;
+	font-family:sans-serif;
+}
+
+#cssmenu_red ul li:HOVER {
+	background:#6E6E6E;
+	border-radius:5px; 
+}
+
+
+.logo {
+	width: 315px;
+	height: 80px;
+	float: left;
+}
+
+.mainbody{
+	  width: 100%;
+	  height: 400px;
+	  background: white;
+      padding-top: 50px;
+}
+.slide{
+	 width: 795px;
+	 height: 500px;
+	 float: left;
+} 
+.login-box {
+	width: 350px;
+	height: 350px;
+	max-width: 400px;
+	background-color: #FFFFFF;
+	float: right;
+	border-left: 1px solid #BDBDBD;
+	padding-left: 55px; 
+}
+
+.text {
+	margin:auto;
+	width: 250px;
+	height:30px;
+	font-size:12px;
+	padding-left: 15px;
+	border: 1px solid #ddd;
+	border-radius:5px;
+}
+.text:focus{
+	border: 1px solid yellow;
+	border-radius:5px;
+}
+
+a{
+	text-decoration: none;
+	color: gray;
+}
+a:HOVER{
+	color: #2E2E2E;
+	text-decoration: underline;
+}
+.btn {
+	margin-left:70px;
+	width: 120px;
+	height: 40px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font-size: 12px;
+	font-family: arial, helvetica, sans-serif;
+	padding: 10px 10px 10px 10px;
+	text-decoration: none;
+	display: inline-block;
+	text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #2E2E2E;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#2E2E2E),
+		to(#1C1C1C));
+	background-image: -webkit-linear-gradient(top, #2E2E2E, #1C1C1C);
+	background-image: -moz-linear-gradient(top, #2E2E2E, #1C1C1C);
+	background-image: -ms-linear-gradient(top, #2E2E2E, #1C1C1C);
+	background-image: -o-linear-gradient(top, #2E2E2E, #1C1C1C);
+	background-image: linear-gradient(to bottom, #2E2E2E, #1C1C1C);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,
+		startColorstr=#2E2E2E, endColorstr=#1C1C1C);
+}
+
+.btn:HOVER {
+	width: 120px;
+	height: 40px;
+	border: 1px solid #000;
+	border: 1px solid #450111;
+	background-color: #585858;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#585858),
+		to(#6E6E6E));
+	background-image: -webkit-linear-gradient(top, #585858, #6E6E6E);
+	background-image: -moz-linear-gradient(top, #585858, #6E6E6E);
+	background-image: -ms-linear-gradient(top, #585858, #6E6E6E);
+	background-image: -o-linear-gradient(top, #585858, #6E6E6E);
+	background-image: linear-gradient(to bottom, #585858, #6E6E6E);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,
+		startColorstr=#585858, endColorstr=#6E6E6E);
+}
+
+
+ .errorMessage {
+	list-style: none;
+	height: 12px;
+	width:45%;
+	padding-top:15px;
+	margin-top: -20px;
+	font-size: 13px;
+	position: absolute;
+	margin-left:-55px;
+	vertical-align: -25px;
+	color: red;
+}
+.error{
+	list-style:none;
+	height: auto;
+	width:30%;
+	font-size: 13px;
+	position: absolute;
+	margin-left:20px;
+	vertical-align: -25px;
+	color: red;
+}
+h1{
+	color: #2E2E2E;
+	font-size: 36px;
+	padding-left: 60px;
+}
+.fp {
+	cursor: pointer;
+	color: gray;
+}
+.footer2 {
+	background-image: url("/EstereoHumor/images/pattern2.png");
+	background-color: #9F9898;
+	width: 100%;
+	height: 70px;
+}
+
+.copyright {
+	font-size: 16px;
+	text-transform: uppercase;
+	color: gray; 
+	padding-top: 30px;
+	margin-left: 120px;
+}
+.social {
+	width: 350px;
+	height: 50px;
+	float: right;
+}
+
+.social ul {
+	width: 200px;
+	height: 50px;
+	padding-left: 150px;
+}
+
+.social ul li {
+	width: 35px;
+	height: 35px;
+	float: left;
+	list-style: none;
+	margin-right: 10px;
+	border-radius: 50px;
+}
+
+.social .tw a {
+	width: 35px;
+	height: 35px;
+	border-radius: 50px;
+	border-color: #B2ABAB;
+	background: #B2ABAB url("/EstereoHumor/images/icon_twitter.png") center 5px no-repeat;
+}
+
+.social .tw a:HOVER {
+	background-color: #5ec2df !important;
+}
+
+.social .fb a {
+	width: 35px;
+	height: 35px;
+	border-radius: 50px;
+	background: #B2ABAB url("/EstereoHumor/images/icon_facebook.png") center
+		5px no-repeat;
+}
+
+.social .fb a:HOVER {
+	background-color: #2c6087 !important;
+}
+
+.social .gp a {
+	width: 35px;
+	height: 35px;
+	border-radius: 50px;
+	background: #B2ABAB url("/EstereoHumor/images/icon_google.png") center
+		5px no-repeat;
+}
+
+.social .gp a:HOVER {
+	background-color: #e03e12 !important;
+}
+
+.social .in a {
+	width: 35px;
+	height: 35px;
+	border-radius: 50px;
+	background: #B2ABAB url("/EstereoHumor/images/icon_linkedin.png") center
+		5px no-repeat;
+}
+
+.social .in a:HOVER {
+	background-color: #3686ab !important;
+}
+
+.social ul li a {
+	width: 100px;
+	height: 50px;
+	float: left;
+	text-decoration: none;
+}
+.footer {
+	background-image: url("/EstereoHumor/images/bgg.png");
+	width: 100%;
+	height: 400px;
+}
+
+.wrap {
+	width: 1050px;
+	margin: 0 auto;
+	text-align: left;
+	 
+}
+
+.wrap ul {
+	float: left;
+	display: block;
+	margin-top: -60px;
+}
+
+.wrap ul li {
+	width: 240px;
+	height: 184px;
+	border: 1px solid #000;
+	border-radius:8px;
+	margin-top: 100px;
+	background: url("/EstereoHumor/images/company_promo_bg.png") no-repeat 0 0;
+	width: 200px;
+	padding: 0 10px;
+	float: left;
+	display: inline;
+	margin-left: 20px;
+	text-align: center;
+}
+
+.wrap ul li a {
+	font-size: 11px;
+	color: #777;
+	display: block;
+	padding-top: 84px;
+	height: 96px;
+	text-shadow: #222 0 -1px 0;
+	padding-top: 0px;
+	text-decoration: none;
+}
+
+h2 {
+	color: #FFFFFF;
+	height: 5px;
+}
+.popup h2{
+	   margin-top: 0px;
+	   height: 35px;
+	   border-bottom: 1px solid gray;
+	   color: black;
+}

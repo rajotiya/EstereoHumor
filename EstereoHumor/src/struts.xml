@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <constant name="struts.custom.i18n.resources" value="global" />
+	<constant name="struts.devMode" value="false" />
+	<constant name="struts.multipart.maxSize" value="10485760" /> 
+	
+    
+	<package name="com" extends="struts-default">
+       <global-exception-mappings>
+           
+           <exception-mapping result="error" exception="java.lang.Exception">
+            </exception-mapping>
+       </global-exception-mappings>
+		<action name="home" class="com.LoginAction">
+			<result name="success">/userLogin.jsp</result>
+			<result name="input">/login.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="reg" class="com.RegisterAction">
+			<result name="success">/success.jsp</result>
+			<result name="input">/register.jsp</result>
+		</action>
+		<action name="search" class="com.SearchBean">
+			<result name="success">/home.jsp</result>
+			<result name="input">/index.jsp</result>
+		</action>
+		<action name="confirmRegister" class="com.verifyRegistration">
+			<result name="success">/login.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="forget" class="com.ForgetPasswordAction">
+			<result name="success">/forgetPassword.jsp</result>
+			<result name="input">/login.jsp</result>
+			<result name="error">/errorPage.jsp</result>
+		</action>
+		<action name="changepass" class="com.ChangePasswordAction">
+			<result name="success">/index.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="logout" class="com.LogoutAction">
+			<result name="success">/index.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="loginpage">
+			<result>/login.jsp</result>
+		</action>
+		<action name="registerpage">
+			<result>/register.jsp</result>
+		</action>
+		<action name="homepage">
+			<result>/index.jsp</result>
+		</action>
+		<action name="registerpage">
+			<result>/register.jsp</result>
+		</action>
+		<action name="changepwd">
+			<result>/changePassword.jsp</result>
+		</action>
+		<action name="index">
+			<result>/index.jsp</result>
+		</action>
+		<action name="imgUpload">
+			<result>/imageUpload.jsp</result>
+		</action>
+
+		<action name="imgDownload">
+			<result>/viewImage.jsp</result>
+		</action>
+		
+		<action name="imageUpload" class="com.FileUploadAction">
+			<result name="success">/userLogin.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+
+		<action name="download" class="com.FileDownloadAction">
+			<interceptor-ref name="fileUpload">
+				<param name="maximumSize">10485760</param>
+				<param name="allowedTypes">text/plain</param>
+			</interceptor-ref>
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+			<result name="success" type="stream">
+				<param name="contentType">${profileImageContentType}</param>
+				<param name="inputName">profileImage</param>
+				<param name="contentDisposition">attachment;filename="${profileImageFileName}"</param>
+				<param name="bufferSize">2048</param>
+			</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="Play" class="com.PlayAction">
+			<interceptor-ref name="fileUpload">
+				<param name="maximumSize">10485760</param>
+				<param name="allowedTypes">text/plain</param>
+			</interceptor-ref>
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+			<result name="success" type="stream">
+				<param name="contentType">${profileImageContentType}</param>
+				<param name="inputName">profileImage</param>
+				<param name="contentDisposition">filename="${profileImageFileName}"</param>
+				<param name="bufferSize">10485760</param>
+			</result>
+			<result name="error">/error.jsp</result>
+		</action>
+	</package>
+</struts>
